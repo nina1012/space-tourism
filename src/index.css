@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.nav-link {
+		@apply uppercase text-navLink font-barlowCondensed tracking-navTextLetterSpace hover:text-secondaryLight;
+	}
+}
+
+@layer utilities {
+	.centering {
+		@apply flex justify-center items-center;
+	}
+
+	.background-utils {
+		@apply bg-cover bg-no-repeat h-screen;
+	}
+}
