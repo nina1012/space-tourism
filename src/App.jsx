@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
 import useMediaQuery from './hooks/useMediaQuery';
-
+import './App.css';
 function App() {
 	const { screenSize: size, pathname } = useMediaQuery();
 

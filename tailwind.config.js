@@ -26,6 +26,8 @@ module.exports = {
 		},
 		screens: {
 			sm: '375px',
+			md: '768px',
+			lg: '1100px',
 		},
 		letterSpacing: {
 			heading5LetterSpace: '4.75px',

@@ -4,7 +4,16 @@
 
 @layer components {
 	.nav-link {
-		@apply uppercase text-navLink font-barlowCondensed tracking-navTextLetterSpace hover:text-secondaryLight;
+		@apply uppercase text-secondaryLight flex
+		my-8
+		 pl-9 
+		 text-navLink font-barlowCondensed tracking-navTextLetterSpace hover:text-secondaryLight
+		md:inline-block md:text-sm md:pl-0 md:pr-4 hover:border-r-4 md:hover:border-r-0 md:hover:border-b-2 md:my-0 md:py-8;
+	}
+	.nav-link:hover {
+	}
+	.nav-button {
+		@apply absolute;
 	}
 }
 
