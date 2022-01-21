@@ -15,6 +15,10 @@
 	.nav-button {
 		@apply absolute;
 	}
+
+	.button {
+		@apply uppercase font-bellefair text-2xl centering bg-white text-primaryDark rounded-full;
+	}
 }
 
 @layer utilities {
