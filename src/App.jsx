@@ -3,6 +3,8 @@ import useMediaQuery from './hooks/useMediaQuery';
 import './App.css';
 import Home from './components/Home';
 import Destination from './components/Destination';
+// import Crew from './components/Crew';
+import Technology from './components/Technology';
 
 function App() {
 	const { screenSize: size, pathname } = useMediaQuery();
@@ -19,13 +21,16 @@ function App() {
 				}-${
 					size[0] < 768 ? 'mobile' : size[0] < 1100 ? 'tablet' : 'desktop'
 				}.jpg)`,
+				padding: `${
+					pathname == '/technology' && size[0] < 1100 ? '0' : '0 1.5rem'
+				}`,
 			}}
 		>
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/destination' element={<Destination />} />
 				<Route path='/crew' element={<h1>Crew</h1>} />
-				<Route path='/technology' element={<h1>Technology</h1>} />
+				<Route path='/technology' element={<Technology />} />
 			</Routes>
 		</div>
 	);
