@@ -25,13 +25,13 @@ const Nav = () => {
 			)}
 
 			<nav
-				className='text-white backdrop-blur-3xl min-h-screen w-3/5 pt-28 min-w-[66%] md:pt-0 md:min-w-[50%] md:min-h-min md:text-right'
+				className='text-white backdrop-blur-3xl min-h-screen w-3/5 pt-24 min-w-[66%] md:pt-0 md:min-w-[50%] md:min-h-min md:text-right'
 				style={{
 					display: `${size[0] < 768 && openNav ? 'none' : 'block'}`,
 					width: 'var(--nav-width)',
 				}}
 			>
-				<ul className='w-full md:pr-12'>
+				<ul className='w-full md:pr-12 md:h-full'>
 					{['home', 'destination', 'crew', 'technology'].map((link, index) => (
 						<li className='nav-link items-center' key={link}>
 							<Link to={link === 'home' ? '/' : link}>

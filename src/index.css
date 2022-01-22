@@ -6,12 +6,14 @@
 	.nav-link {
 		@apply uppercase text-secondaryLight flex
 		my-8
-		 pl-9 
-		 text-navLink font-barlowCondensed tracking-navTextLetterSpace hover:text-secondaryLight
-		md:inline-block md:text-sm md:pl-0 md:pr-4 hover:border-r-4 md:hover:border-r-0 md:hover:border-b-2 md:my-0 md:py-8;
+		transition-colors transition-[border]
+		pl-9 
+		text-navLink font-barlowCondensed tracking-navTextLetterSpace 
+		hover:text-secondaryLight hover:border-r-4 md:hover:border-r-0 md:hover:border-b-2
+		md:inline-block md:text-sm md:pl-0 md:pr-4 md:h-full
+		md:my-0 md:py-8 md:mx-1;
 	}
-	.nav-link:hover {
-	}
+
 	.nav-button {
 		@apply absolute;
 	}
@@ -28,5 +30,10 @@
 
 	.background-utils {
 		@apply bg-cover bg-no-repeat h-screen;
+	}
+
+	.heading1 {
+		@apply text-[80px] leading-[100px] font-bellefair font-normal text-white uppercase
+		md:text-heading1 md:leading-heading1;
 	}
 }

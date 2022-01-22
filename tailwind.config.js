@@ -34,6 +34,9 @@ module.exports = {
 			subheading2LetterSpace: '2.35px',
 			navTextLetterSpace: '2.7px',
 		},
+		lineHeight: {
+			heading1: '150px',
+		},
 	},
 	plugins: [],
 };
