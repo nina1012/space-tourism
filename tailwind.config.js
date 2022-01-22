@@ -36,6 +36,11 @@ module.exports = {
 		},
 		lineHeight: {
 			heading1: '150px',
+			heading2: '114.8px',
+			heading3: '64.18px',
+			heading4: '36.67px',
+			heading5: '33.6px',
+			subheading1: '32.09px',
 		},
 	},
 	plugins: [],

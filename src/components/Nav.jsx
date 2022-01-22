@@ -7,10 +7,10 @@ const Nav = () => {
 	const size = useContext(SizeContext);
 	return (
 		<div
-			className='absolute top-0 left-0 w-full flex'
+			className='absolute top-0 left-0 w-full flex lg:pt-4'
 			style={{ height: '96px' }}
 		>
-			<Link to='/' className='mr-auto pt-6 pl-6 md:pl-9 '>
+			<Link to='/' className='mr-auto pt-6 pl-6 md:pl-9 lg:mr-12'>
 				<img
 					src='./assets/shared/logo.svg'
 					alt='Logo'
@@ -33,7 +33,7 @@ const Nav = () => {
 			>
 				<ul className='w-full md:pr-12 md:h-full'>
 					{['home', 'destination', 'crew', 'technology'].map((link, index) => (
-						<li className='nav-link items-center' key={link}>
+						<li className='nav-link nav-text items-center' key={link}>
 							<Link to={link === 'home' ? '/' : link}>
 								<span className='text-bold text-white md:hidden'>0{index}</span>
 								<span className='w-3 inline-block'></span>
