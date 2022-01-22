@@ -21,7 +21,10 @@ const Nav = () => {
 				/>
 			</Link>
 			{size[0] > 1100 && (
-				<hr className='max-w-full my-auto mx-0' style={{ width: '473px' }} />
+				<hr
+					className='max-w-full my-auto mx-0 text-primaryDark opacity-50'
+					style={{ width: '473px' }}
+				/>
 			)}
 
 			<nav

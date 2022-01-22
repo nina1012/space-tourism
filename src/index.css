@@ -31,7 +31,7 @@
 	}
 
 	.heading2 {
-		@apply text-heading3 leading-[64.18px] font-bellefair font-normal text-white 
+		@apply text-heading3 uppercase leading-[64.18px] font-bellefair font-normal text-white 
 		md:text-[80px] md:leading-[91.68px] lg:text-heading2 lg:leading-heading2;
 	}
 
@@ -46,16 +46,16 @@
 	}
 
 	.heading5 {
-		@apply font-barlowCondensed font-normal text-base leading-[19.2px] tracking-navTextLetterSpace text-center text-secondaryLight
+		@apply font-barlowCondensed font-normal uppercase text-base leading-[19.2px] tracking-navTextLetterSpace text-center text-secondaryLight
 		md:text-2xl md:leading-[24px] md:tracking-[3.38px] lg:text-heading5 lg:leading-heading5 lg:tracking-heading5LetterSpace lg:text-left;
 	}
 
 	.subheading1 {
-		@apply font-bellefair font-normal text-subheading1 leading-subheading1;
+		@apply uppercase font-bellefair font-normal text-subheading1 leading-subheading1 lg:text-left;
 	}
 
 	.subheading2 {
-		@apply font-barlowCondensed font-normal text-[14px] leading-[16.4px] tracking-[2.36px];
+		@apply uppercase font-barlowCondensed font-normal text-[14px] leading-[16.4px] tracking-[2.36px] lg:text-left;
 	}
 
 	.nav-text {
@@ -65,6 +65,6 @@
 
 	.text {
 		@apply font-barlowCondensed font-normal text-[15px] leading-[25px] max-w-xs text-center text-secondaryLight
-		md:text-[20px] md:max-w-md md:leading-[28px] lg:text-lg lg:leading-[32px] lg:text-left lg:mx-0;
+		md:text-[20px] md:max-w-lg md:leading-[28px] lg:text-lg lg:leading-[32px] lg:text-left lg:mx-0 lg:w-[444px] lg:h-[160px];
 	}
 }
