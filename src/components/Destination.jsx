@@ -22,7 +22,7 @@ const Destination = () => {
 						<ul className='flex justify-around mx-auto lg:justify-start'>
 							{['Moon', 'Mars', 'Europa', 'Titan'].map((planet) => (
 								<li
-									className='nav-link nav-text inline-block h-full pl-0 pr-0 pb-3 border-b-2 border-b-transparent border-r-0 hover:border-b-2 hover:border-b-white hover:border-r-0 lg:mr-4 lg:text-center'
+									className='nav-link nav-text inline-block h-full pl-0 pr-0 pb-3 border-b-2 border-b-transparent border-r-0 hover:border-b-2 hover:border-b-white hover:border-r-0 hover:cursor-pointer lg:mr-4 lg:text-center'
 									onClick={() => setItem(planet)}
 									key={planet}
 								>
