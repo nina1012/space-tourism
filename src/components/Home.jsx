@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 const Home = () => {
 	return (
-		<div className='home pt-28 md:pt-52 lg:flex lg:items-end lg:px-40 lg:pt-96'>
+		<div className='home pt-28 md:pt-52 md:pb-28 lg:flex lg:items-end lg:px-40 lg:pb-28 lg:pt-96 '>
 			<div className='lg:mr-auto'>
 				<h5 className='heading5'>SO, YOU WANT TO TRAVEL TO</h5>
 				<h1 className='heading1 py-3 md:py-5'>Space</h1>
@@ -12,7 +12,7 @@ const Home = () => {
 					experience!
 				</p>
 			</div>
-			<div className='mt-20 md:mt-36 lg:mt-0'>
+			<div className='mt-20 md:mt-36 lg:mt-0 lg:self-center'>
 				<Link to='/destination' className='button heading4'>
 					explore
 				</Link>

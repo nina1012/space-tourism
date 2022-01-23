@@ -11,7 +11,7 @@ function App() {
 
 	return (
 		<div
-			className='background-utils text-white px-6'
+			className='background-utils text-white px-6 pb-20'
 			// background image's url will be dynamic and will depend on screen width and pathname
 			style={{
 				backgroundImage: `url(./assets${

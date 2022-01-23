@@ -22,7 +22,7 @@
 	}
 
 	.background-utils {
-		@apply bg-cover bg-no-repeat h-screen;
+		@apply bg-cover bg-no-repeat min-h-screen;
 	}
 
 	.heading1 {
@@ -36,7 +36,7 @@
 	}
 
 	.heading3 {
-		@apply text-2xl leading-[27.5px] font-bellefair font-normal 
+		@apply text-2xl uppercase leading-[27.5px] font-bellefair font-normal 
 		md:text-4xl leading-[45.84px] lg:text-heading3 lg:leading-heading3;
 	}
 

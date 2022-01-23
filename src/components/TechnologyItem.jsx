@@ -29,7 +29,9 @@ const TechnologyItem = () => {
 						<div
 							className='button heading4 w-10 h-10 md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 lg:mb-6'
 							key={button}
-							onClick={() => setActiveButton(index)}
+							onClick={(e) => {
+								setActiveButton(index);
+							}}
 						>
 							{button}
 						</div>

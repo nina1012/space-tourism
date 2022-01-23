@@ -7,11 +7,11 @@ const Destination = () => {
 
 	return (
 		<div className='destination pt-[88px] md:pt-36 lg:pt-52 '>
-			<h5 className='text-center heading5 md:text-left lg:pl-40'>
+			<h5 className='text-center heading5 md:text-left lg:pl-36'>
 				<span className='opacity-20 mr-4 inline-block '>01</span>pick your
 				destination
 			</h5>
-			<div className='flex flex-col justify-center lg:flex-row lg:mt-16'>
+			<div className='flex flex-col justify-center lg:flex-row lg:mt-16 lg:gap-8'>
 				<img
 					src={`./assets/destination/image-${item}.png`}
 					className='w-[170px] h-[170px] my-8 mx-auto md:w-[300px] md:h-[300px] md:my-16 lg:w-[445px] lg:h-[445px]'

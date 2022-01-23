@@ -34,7 +34,7 @@ const Nav = () => {
 					width: 'var(--nav-width)',
 				}}
 			>
-				<ul className='w-full md:pr-12 md:h-full'>
+				<ul className='w-full h-screen md:pr-12 md:h-full'>
 					{['home', 'destination', 'crew', 'technology'].map((link, index) => (
 						<li className='nav-link nav-text items-center' key={link}>
 							<Link to={link === 'home' ? '/' : link}>
