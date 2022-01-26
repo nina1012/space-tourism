@@ -7,7 +7,7 @@ const Destination = () => {
 
 	return (
 		<div className='destination pt-[88px] md:pt-36 lg:pt-52 '>
-			<h5 className='text-center heading5 md:text-left lg:pl-36'>
+			<h5 className='text-center heading5 md:text-left'>
 				<span className='opacity-20 mr-4 inline-block '>01</span>pick your
 				destination
 			</h5>

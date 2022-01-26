@@ -8,11 +8,11 @@
 	}
 
 	.nav-button {
-		@apply absolute;
+		@apply absolute z-20;
 	}
 
 	.button {
-		@apply uppercase font-bellefair text-2xl centering w-[150px] h-[150px] bg-white text-primaryDark rounded-full mx-auto md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px];
+		@apply uppercase font-bellefair text-2xl centering  bg-white text-primaryDark rounded-full mx-auto;
 	}
 }
 
@@ -41,13 +41,15 @@
 	}
 
 	.heading4 {
-		@apply font-bellefair font-normal text-base leading-[18.34px]
+		@apply uppercase font-bellefair font-normal text-base leading-[18.34px]
 		md:text-[24px] md:leading-[27.5px] lg:text-heading4 lg:leading-heading4;
 	}
 
 	.heading5 {
-		@apply font-barlowCondensed font-normal uppercase text-base leading-[19.2px] tracking-navTextLetterSpace text-center text-secondaryLight
-		md:text-2xl md:leading-[24px] md:tracking-[3.38px] lg:text-heading5 lg:leading-heading5 lg:tracking-heading5LetterSpace lg:text-left;
+		@apply font-barlowCondensed font-normal uppercase text-base leading-[19.2px] tracking-navTextLetterSpace text-center text-secondaryLight 
+		md:text-2xl md:leading-[24px] md:tracking-[3.38px]
+		 /* md:pl-10  */
+		 lg:text-heading5 lg:leading-heading5 lg:tracking-heading5LetterSpace lg:text-left lg:pl-36;
 	}
 
 	.subheading1 {

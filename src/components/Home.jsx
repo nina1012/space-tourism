@@ -3,7 +3,7 @@ const Home = () => {
 	return (
 		<div className='home pt-28 md:pt-52 md:pb-28 lg:flex lg:items-end lg:px-40 lg:pb-28 lg:pt-96 '>
 			<div className='lg:mr-auto'>
-				<h5 className='heading5'>SO, YOU WANT TO TRAVEL TO</h5>
+				<h5 className='heading5 pl-0 md:pl-0 '>SO, YOU WANT TO TRAVEL TO</h5>
 				<h1 className='heading1 py-3 md:py-5'>Space</h1>
 				<p className='text mx-auto'>
 					Let’s face it; if you want to go to space, you might as well genuinely
@@ -13,7 +13,10 @@ const Home = () => {
 				</p>
 			</div>
 			<div className='mt-20 md:mt-36 lg:mt-0 lg:self-center'>
-				<Link to='/destination' className='button heading4'>
+				<Link
+					to='/destination'
+					className='button heading4 w-[150px] h-[150px] md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px]'
+				>
 					explore
 				</Link>
 			</div>

@@ -3,7 +3,7 @@ import useMediaQuery from './hooks/useMediaQuery';
 import './App.css';
 import Home from './components/Home';
 import Destination from './components/Destination';
-// import Crew from './components/Crew';
+import Crew from './components/Crew';
 import Technology from './components/Technology';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
 	return (
 		<div
-			className='background-utils text-white px-6 pb-20'
+			className='background-utils text-white px-8 pb-20'
 			// background image's url will be dynamic and will depend on screen width and pathname
 			style={{
 				backgroundImage: `url(./assets${
@@ -29,7 +29,7 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/destination' element={<Destination />} />
-				<Route path='/crew' element={<h1>Crew</h1>} />
+				<Route path='/crew' element={<Crew />} />
 				<Route path='/technology' element={<Technology />} />
 			</Routes>
 		</div>

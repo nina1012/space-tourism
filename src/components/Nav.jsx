@@ -10,7 +10,7 @@ const Nav = () => {
 			className='absolute top-0 left-0 w-full flex lg:pt-4'
 			style={{ height: '96px' }}
 		>
-			<Link to='/' className='mr-auto pt-6 pl-6 md:pl-9 lg:mr-12'>
+			<Link to='/' className='pl-4 mr-auto pt-6 md:pl-6 lg:mr-12'>
 				<img
 					src='./assets/shared/logo.svg'
 					alt='Logo'
@@ -28,7 +28,7 @@ const Nav = () => {
 			)}
 
 			<nav
-				className='text-white backdrop-blur-3xl min-h-screen w-3/5 pt-24 min-w-[66%] md:pt-0 md:min-w-[50%] md:min-h-min md:text-right'
+				className='absolute right-0 z-20 text-white backdrop-blur-3xl min-h-screen w-3/5 pt-24 min-w-[66%] md:pt-0 md:min-w-[50%] md:min-h-min md:text-right'
 				style={{
 					display: `${size[0] < 768 && openNav ? 'none' : 'block'}`,
 					width: 'var(--nav-width)',
