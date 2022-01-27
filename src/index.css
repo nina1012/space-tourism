@@ -17,13 +17,13 @@
 
 	span.swiper-pagination-bullet,
 	.indicator {
-		@apply w-4 h-4 bg-white;
+		@apply w-4 h-4 bg-white lg:w-[18px] lg:h-[18px];
 	}
 	.swiper-pagination,
 	.swiper-pagination-clickable,
 	.swiper-pagination-bullets,
 	.swiper-pagination-horizontal {
-		@apply relative top-[280px];
+		@apply relative top-[280px] w-[88px] lg:w-[132px] lg:top-[791px] lg:left-[167px];
 	}
 }
 
