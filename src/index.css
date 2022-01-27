@@ -14,6 +14,17 @@
 	.button {
 		@apply uppercase font-bellefair text-2xl centering  bg-white text-primaryDark rounded-full mx-auto;
 	}
+
+	span.swiper-pagination-bullet,
+	.indicator {
+		@apply w-4 h-4 bg-white;
+	}
+	.swiper-pagination,
+	.swiper-pagination-clickable,
+	.swiper-pagination-bullets,
+	.swiper-pagination-horizontal {
+		@apply relative top-[280px];
+	}
 }
 
 @layer utilities {

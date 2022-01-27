@@ -7,7 +7,7 @@ const Nav = () => {
 	const size = useContext(SizeContext);
 	return (
 		<div
-			className='absolute top-0 left-0 w-full flex lg:pt-4'
+			className='absolute top-0 left-0 w-full flex lg:pt-4 z-50'
 			style={{ height: '96px' }}
 		>
 			<Link to='/' className='pl-4 mr-auto pt-6 md:pl-6 lg:mr-12'>

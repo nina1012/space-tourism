@@ -1,7 +1,7 @@
 const Member = ({ crew }) => {
 	return (
-		<div className='member flex flex-col hover:cursor-grab lg:flex-row'>
-			<div className='md:my-14'>
+		<div className='member flex flex-col  lg:flex-row'>
+			<div className='mt-11 md:my-14'>
 				<h4 className='heading4 opacity-50 text-center'>{crew.role}</h4>
 				<h3 className='heading3 text-center md:mt-2 md:mb-4'>{crew.name}</h3>
 				<p className='text mx-auto md:mb-10'>{crew.bio}</p>
