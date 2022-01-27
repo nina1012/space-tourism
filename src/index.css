@@ -15,15 +15,17 @@
 		@apply uppercase font-bellefair text-2xl centering  bg-white text-primaryDark rounded-full mx-auto;
 	}
 
-	span.swiper-pagination-bullet,
-	.indicator {
+	/* overriding default styling and positioning pagination bullets based on screen size */
+	.swiper > .swiper-pagination > span.swiper-pagination-bullet {
 		@apply w-4 h-4 bg-white lg:w-[18px] lg:h-[18px];
 	}
-	.swiper-pagination,
+
+	/* overriding default styling and positioning pagination based on screen size */
+	.swiper > .swiper-pagination,
 	.swiper-pagination-clickable,
 	.swiper-pagination-bullets,
 	.swiper-pagination-horizontal {
-		@apply relative top-[280px] w-[88px] lg:w-[132px] lg:top-[791px] lg:left-[167px];
+		@apply text-center relative top-[310px] w-[88px] md:top-[320px] lg:w-[132px] lg:top-[600px] lg:pl-[140px]  lg:text-left;
 	}
 }
 
