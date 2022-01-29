@@ -18,7 +18,7 @@ const Destination = () => {
 					alt={item}
 				/>
 				<div className='lg:mr-40 '>
-					<nav className='text-white w-[300px] mx-auto lg:mx-0 lg:w-[330px] lg:mx-0'>
+					<nav className='text-white w-[300px] mx-auto lg:w-[330px] lg:mx-0'>
 						<ul className='flex justify-around mx-auto w-64 md:w-72 lg:mx-0 lg:justify-start'>
 							{['Moon', 'Mars', 'Europa', 'Titan'].map((planet) => (
 								<li
