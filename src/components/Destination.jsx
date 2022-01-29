@@ -18,8 +18,8 @@ const Destination = () => {
 					alt={item}
 				/>
 				<div className='lg:mr-40 '>
-					<nav className='text-white w-[300px] mx-auto lg:mx-0 lg:w-[330px]'>
-						<ul className='flex justify-around mx-auto lg:justify-start'>
+					<nav className='text-white w-[300px] mx-auto lg:mx-0 lg:w-[330px] lg:mx-0'>
+						<ul className='flex justify-around mx-auto w-64 md:w-72 lg:mx-0 lg:justify-start'>
 							{['Moon', 'Mars', 'Europa', 'Titan'].map((planet) => (
 								<li
 									className='nav-link nav-text inline-block h-full pl-0 pr-0 pb-3 border-b-2 border-b-transparent border-r-0 hover:border-b-2 hover:border-b-white hover:border-r-0 hover:cursor-pointer lg:mr-4 lg:text-center'
