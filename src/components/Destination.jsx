@@ -13,7 +13,7 @@ const Destination = () => {
 			</h5>
 			<div className='flex flex-col justify-center lg:flex-row lg:mt-16 lg:gap-8'>
 				<img
-					src={`./assets/destination/image-${item}.png`}
+					src={`./assets/destination/image-${item.toLowerCase()}.png`}
 					className='w-[170px] h-[170px] my-8 mx-auto md:w-[300px] md:h-[300px] md:my-16 lg:w-[445px] lg:h-[445px]'
 					alt={item}
 				/>
