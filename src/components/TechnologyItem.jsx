@@ -27,7 +27,11 @@ const TechnologyItem = () => {
 				<div className='buttons w-[150px] flex mx-auto md:mb-12 md:w-[210px] lg:pl-36 lg:flex-col'>
 					{[1, 2, 3].map((button, index) => (
 						<button
-							className='button bg-primaryDark text-secondaryLight border-[1px] border-secondaryLight heading4 w-10 h-10 md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 lg:mb-6'
+							className={`button  border-[1px] transition-colors border-secondaryLight hover:border-white heading4 w-10 h-10 md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 lg:mb-6 ${
+								index === activeButton
+									? 'active-circle'
+									: 'bg-primaryDark text-secondaryLight'
+							}`}
 							key={button}
 							onClick={(e) => {
 								setActiveButton(index);

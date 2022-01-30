@@ -4,15 +4,27 @@
 
 @layer components {
 	.nav-link {
-		@apply flex my-8 transition-colors transition-[border] pl-9 hover:text-secondaryLight hover:border-r-4 md:hover:border-r-0 md:hover:border-b-2 md:inline-block  md:pl-0  md:h-full md:my-0 md:py-8;
+		@apply flex my-8 transition-colors transition-[border] pl-9 border-b-transparent md:inline-block  md:pl-0  md:h-full md:my-0 md:py-8;
 	}
 
 	.nav-button {
 		@apply absolute z-20;
 	}
 
+	.active-nav {
+		@apply text-secondaryLight border-secondaryLight border-r-4 md:border-r-0 md:border-b-2;
+	}
+
+	.active-planet {
+		@apply border-b-secondaryLight;
+	}
+
+	.active-circle {
+		@apply bg-white text-primaryDark;
+	}
+
 	.button {
-		@apply uppercase font-bellefair text-2xl centering  bg-white text-primaryDark rounded-full mx-auto;
+		@apply uppercase font-bellefair text-2xl centering bg-white text-primaryDark rounded-full mx-auto;
 	}
 
 	/* overriding default styling and positioning pagination bullets based on screen size */

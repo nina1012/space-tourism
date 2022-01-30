@@ -5,7 +5,7 @@ import { useOnClickOutside } from '../hooks/useOnClickOutside';
 
 const Nav = () => {
 	const [openNav, setOpenNav] = useState(true);
-	const size = useContext(SizeContext);
+	const { size, setActiveNav, activeNav } = useContext(SizeContext);
 	const ref = useRef();
 	useOnClickOutside(ref, () => setOpenNav(true));
 
@@ -14,7 +14,11 @@ const Nav = () => {
 			className='absolute top-0 left-0 w-full flex lg:pt-4 z-50 md:items-center'
 			style={{ height: '96px' }}
 		>
-			<Link to='/' className='pl-4 my-auto mr-auto md:pl-6 md:my-0 lg:mr-12'>
+			<Link
+				to='/'
+				onClick={() => setActiveNav('home')}
+				className='pl-4 my-auto mr-auto md:pl-6 md:my-0 lg:mr-12'
+			>
 				<img
 					src='./assets/shared/logo.svg'
 					alt='Logo'
@@ -49,7 +53,15 @@ const Nav = () => {
 					}}
 				>
 					{['home', 'destination', 'crew', 'technology'].map((link, index) => (
-						<li className='nav-link nav-text flex' key={link}>
+						<li
+							className={`nav-link nav-text flex ${
+								link === activeNav ? 'active-nav' : ''
+							}`}
+							onClick={(e) => {
+								setActiveNav(link);
+							}}
+							key={link}
+						>
 							<Link
 								to={link === 'home' ? '/' : link}
 								className='min-h-full h-full flex-nowrap text-center
@@ -62,7 +74,7 @@ const Nav = () => {
 									className='w-3'
 									style={{
 										display: `${
-											size[0] > 768 && size[0] < 1440 ? 'none' : 'inline-block'
+											size[0] > 768 && size[0] < 1100 ? 'none' : 'inline-block'
 										}`,
 									}}
 								></span>
