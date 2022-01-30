@@ -4,7 +4,7 @@
 
 @layer components {
 	.nav-link {
-		@apply flex my-8 transition-colors transition-[border] pl-9 hover:text-secondaryLight hover:border-r-4 md:hover:border-r-0 md:hover:border-b-2 md:inline-block  md:pl-0 md:pr-4 md:h-full md:my-0 md:py-8 md:mx-1;
+		@apply flex my-8 transition-colors transition-[border] pl-9 hover:text-secondaryLight hover:border-r-4 md:hover:border-r-0 md:hover:border-b-2 md:inline-block  md:pl-0  md:h-full md:my-0 md:py-8;
 	}
 
 	.nav-button {

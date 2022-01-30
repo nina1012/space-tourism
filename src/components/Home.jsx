@@ -15,7 +15,7 @@ const Home = () => {
 			<div className='mt-20 md:mt-36 lg:mt-0 lg:self-center'>
 				<Link
 					to='/destination'
-					className='button heading4 w-[150px] h-[150px] md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px]'
+					className='button heading4 w-[150px] h-[150px] transition-all hover:shadow-[0_0_1px_4rem_rgba(255,255,255,0.1)]  md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px]'
 				>
 					explore
 				</Link>

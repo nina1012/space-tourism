@@ -24,6 +24,7 @@ module.exports = {
 				'3xl': '0 0 0 1rem rgba(255, 255, 255, 1)',
 			},
 		},
+
 		screens: {
 			sm: '375px',
 			md: '768px',
