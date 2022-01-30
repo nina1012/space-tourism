@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { SizeContext } from '../context/SizeContext';
+import { GlobalContext } from '../context/GlobalContext';
 const Home = () => {
-	const { setActiveNav } = useContext(SizeContext);
+	const { setActiveNav } = useContext(GlobalContext);
 	return (
 		<div className='home pt-28 md:pt-52 md:pb-28 lg:flex lg:items-end lg:px-40 lg:pb-28 lg:pt-96 '>
 			<div className='lg:mr-auto'>

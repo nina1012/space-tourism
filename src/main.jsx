@@ -4,17 +4,17 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Nav from './components/Nav';
-import { SizeProvider } from './context/SizeContext';
+import { GlobalProvider } from './context/GlobalContext';
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
-			<SizeProvider>
+			<GlobalProvider>
 				<>
 					<Nav />
 					<App />
 				</>
-			</SizeProvider>
+			</GlobalProvider>
 		</Router>
 	</React.StrictMode>,
 	document.getElementById('root')

@@ -22,7 +22,7 @@ const Destination = () => {
 						<ul className='flex justify-around mx-auto w-64 md:w-72 lg:mx-0 lg:justify-start'>
 							{['Moon', 'Mars', 'Europa', 'Titan'].map((planet) => (
 								<li
-									className={`nav-link nav-text inline-block h-full pl-0 pr-0 pb-3 border-b-2  border-r-0 ${
+									className={`nav-link nav-text hover:cursor-pointer inline-block h-full pl-0 pr-0 pb-3 border-b-2  border-r-0 ${
 										planet === item ? 'active-planet' : ''
 									} lg:mr-4 `}
 									onClick={() => {

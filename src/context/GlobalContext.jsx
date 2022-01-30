@@ -1,14 +1,14 @@
 import { createContext, useState } from 'react';
 import useMediaQuery from '../hooks/useMediaQuery';
 
-export const SizeContext = createContext();
+export const GlobalContext = createContext();
 
-export const SizeProvider = ({ children }) => {
+export const GlobalProvider = ({ children }) => {
 	const { screenSize: size } = useMediaQuery();
 	const [activeNav, setActiveNav] = useState('home');
 	return (
-		<SizeContext.Provider value={{ size, setActiveNav, activeNav }}>
+		<GlobalContext.Provider value={{ size, setActiveNav, activeNav }}>
 			{children}
-		</SizeContext.Provider>
+		</GlobalContext.Provider>
 	);
 };

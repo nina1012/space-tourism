@@ -1,10 +1,10 @@
-import { SizeContext } from '../context/SizeContext';
+import { GlobalContext } from '../context/GlobalContext';
 import { useContext, useEffect, useState } from 'react';
 import DATA from '../../data';
 
 const TechnologyItem = () => {
 	const [activeButton, setActiveButton] = useState(0);
-	const size = useContext(SizeContext);
+	const size = useContext(GlobalContext);
 	const [technology, setTechnology] = useState(DATA.technology[activeButton]);
 
 	useEffect(() => {
@@ -27,7 +27,7 @@ const TechnologyItem = () => {
 				<div className='buttons w-[150px] flex mx-auto md:mb-12 md:w-[210px] lg:pl-36 lg:flex-col'>
 					{[1, 2, 3].map((button, index) => (
 						<button
-							className={`button  border-[1px] transition-colors border-secondaryLight hover:border-white heading4 w-10 h-10 md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 lg:mb-6 ${
+							className={`button  border-[1px] transition-all border-secondaryLight hover:border-white hover:border-4 heading4 w-10 h-10 md:w-[60px] md:h-[60px] lg:w-20 lg:h-20 lg:mb-6 ${
 								index === activeButton
 									? 'active-circle'
 									: 'bg-primaryDark text-secondaryLight'

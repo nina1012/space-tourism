@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useState, useContext, useRef } from 'react';
-import { SizeContext } from '../context/SizeContext';
+import { GlobalContext } from '../context/GlobalContext';
 import { useOnClickOutside } from '../hooks/useOnClickOutside';
 
 const Nav = () => {
 	const [openNav, setOpenNav] = useState(true);
-	const { size, setActiveNav, activeNav } = useContext(SizeContext);
+	const { size, setActiveNav, activeNav } = useContext(GlobalContext);
 	const ref = useRef();
 	useOnClickOutside(ref, () => setOpenNav(true));
 

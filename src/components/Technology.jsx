@@ -1,10 +1,6 @@
 import TechnologyItem from './TechnologyItem';
-import { useState } from 'react';
-import DATA from '../../data';
 
 const Technology = () => {
-	// const [active, setActive] = useState(1);
-	// console.log(DATA.technology[active]);
 	return (
 		<>
 			<div className='technology pt-[88px] md:pt-36 lg:pt-52 '>
@@ -13,7 +9,6 @@ const Technology = () => {
 					101
 				</h5>
 			</div>
-			{/* {DATA.technology[active]} */}
 			<TechnologyItem />
 		</>
 	);

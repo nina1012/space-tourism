@@ -22,7 +22,7 @@ function App() {
 					size[0] < 768 ? 'mobile' : size[0] < 1100 ? 'tablet' : 'desktop'
 				}.jpg)`,
 				padding: `${
-					pathname == '/technology' && size[0] < 1100 ? '0' : '0 1.5rem'
+					pathname == '/technology' && size[0] < 1100 ? '0' : '0 1.5rem' // on technology page, no padding
 				}`,
 			}}
 		>

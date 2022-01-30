@@ -1,9 +1,6 @@
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// install Swiper modules
-// SwiperCore.use([Pagination]);
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
