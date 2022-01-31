@@ -1,8 +1,5 @@
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { GlobalContext } from '../context/GlobalContext';
 const Home = () => {
-	const { setActiveNav } = useContext(GlobalContext);
 	return (
 		<div className='home pt-28 md:pt-52 md:pb-28 lg:flex lg:items-end lg:px-40 lg:pb-28 lg:pt-96 '>
 			<div className='lg:mr-auto'>
@@ -18,7 +15,6 @@ const Home = () => {
 			<div className='mt-20 md:mt-36 lg:mt-0 lg:self-center'>
 				<Link
 					to='/destination'
-					onClick={() => setActiveNav('destination')}
 					className='button heading4 w-[150px] h-[150px] transition-all hover:shadow-[0_0_1px_4rem_rgba(255,255,255,0.1)]  md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px]'
 				>
 					explore

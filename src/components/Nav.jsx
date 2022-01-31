@@ -1,14 +1,18 @@
-import { Link } from 'react-router-dom';
-import { useState, useContext, useRef } from 'react';
-import { GlobalContext } from '../context/GlobalContext';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useRef } from 'react';
 import { useOnClickOutside } from '../hooks/useOnClickOutside';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const Nav = () => {
+	const { pathname } = useLocation();
 	const [openNav, setOpenNav] = useState(true);
-	const { size, setActiveNav, activeNav } = useContext(GlobalContext);
+	const [activeNav, setActiveNav] = useState(
+		() => pathname.replace(/\//, '') || 'home'
+	);
 	const ref = useRef();
-	useOnClickOutside(ref, () => setOpenNav(true));
 
+	useOnClickOutside(ref, () => setOpenNav(true));
+	const { screenSize: size } = useMediaQuery();
 	return (
 		<div
 			className='absolute top-0 left-0 w-full flex lg:pt-4 z-50 md:items-center'

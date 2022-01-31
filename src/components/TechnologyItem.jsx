@@ -1,10 +1,10 @@
-import { GlobalContext } from '../context/GlobalContext';
 import { useContext, useEffect, useState } from 'react';
 import DATA from '../../data';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const TechnologyItem = () => {
 	const [activeButton, setActiveButton] = useState(0);
-	const size = useContext(GlobalContext);
+	const { screenSize: size } = useMediaQuery();
 	const [technology, setTechnology] = useState(DATA.technology[activeButton]);
 
 	useEffect(() => {
