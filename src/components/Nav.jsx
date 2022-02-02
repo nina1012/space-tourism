@@ -1,28 +1,30 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useOnClickOutside } from '../hooks/useOnClickOutside';
 import useMediaQuery from '../hooks/useMediaQuery';
+import clsx from 'clsx';
 
 const Nav = () => {
 	const { pathname } = useLocation();
 	const [openNav, setOpenNav] = useState(true);
-	const [activeNav, setActiveNav] = useState(
-		() => pathname.replace(/\//, '') || 'home'
-	);
 	const ref = useRef();
 
 	useOnClickOutside(ref, () => setOpenNav(true));
+
 	const { screenSize: size } = useMediaQuery();
+
+	const LINKS = {
+		home: '/',
+		destination: '/destination',
+		crew: '/crew',
+		technology: '/technology',
+	};
 	return (
 		<div
 			className='absolute top-0 left-0 w-full flex lg:pt-4 z-50 md:items-center'
 			style={{ height: '96px' }}
 		>
-			<Link
-				to='/'
-				onClick={() => setActiveNav('home')}
-				className='pl-4 my-auto mr-auto md:pl-6 md:my-0 lg:mr-12'
-			>
+			<Link to='/' className='pl-4 my-auto mr-auto md:pl-6 md:my-0 lg:mr-12'>
 				<img
 					src='./assets/shared/logo.svg'
 					alt='Logo'
@@ -56,36 +58,38 @@ const Nav = () => {
 						display: `${size[0] < 768 && openNav ? 'none' : 'flex'}`,
 					}}
 				>
-					{['home', 'destination', 'crew', 'technology'].map((link, index) => (
-						<li
-							className={`nav-link nav-text flex ${
-								link === activeNav ? 'active-nav' : ''
-							}`}
-							onClick={(e) => {
-								setActiveNav(link);
-							}}
-							key={link}
-						>
-							<Link
-								to={link === 'home' ? '/' : link}
-								className='min-h-full h-full flex-nowrap text-center
-								 '
+					{Object.values(LINKS).map((path, index) => {
+						const isActive = path === pathname;
+						return (
+							<li
+								className={clsx(
+									'nav-link nav-text flex',
+									isActive && 'active-nav'
+								)}
+								key={path}
 							>
-								<span className='text-bold text-white inline-block md:hidden text-center lg:inline-block'>
-									0{index}
-								</span>
-								<span
-									className='w-3'
-									style={{
-										display: `${
-											size[0] > 768 && size[0] < 1100 ? 'none' : 'inline-block'
-										}`,
-									}}
-								></span>
-								{link}
-							</Link>
-						</li>
-					))}
+								<Link
+									to={path}
+									className='min-h-full h-full flex-nowrap text-center'
+								>
+									<span className='text-bold text-white inline-block md:hidden text-center lg:inline-block'>
+										0{index}
+									</span>
+									<span
+										className='w-3'
+										style={{
+											display: `${
+												size[0] > 768 && size[0] < 1100
+													? 'none'
+													: 'inline-block'
+											}`,
+										}}
+									></span>
+									{Object.keys(LINKS)[index]}
+								</Link>
+							</li>
+						);
+					})}
 				</ul>
 				<button>
 					{size[0] < 768 ? (
